@@ -20,7 +20,7 @@ public class MultipleChoiceQuestion extends Question {
         System.out.println(question + "\n");
 
         for(String o : options) {
-            System.out.println(o + "\n");
+            System.out.println("- " + o + "\n");
         }
     }
 }

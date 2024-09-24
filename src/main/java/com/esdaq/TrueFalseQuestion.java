@@ -10,6 +10,7 @@ public class TrueFalseQuestion extends Question{
 
     @Override
     public void displayOptions() {
+        System.out.println(question + "\n");
 
     }
 }

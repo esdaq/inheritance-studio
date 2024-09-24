@@ -2,16 +2,18 @@ package com.esdaq;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Quiz {
 
-    ArrayList mcQuestions = new ArrayList<MultipleChoiceQuestion>();
-    ArrayList cbQuestions = new ArrayList<CheckBoxQuestion>();
-    ArrayList tfQuestions = new ArrayList<TrueFalseQuestion>();
+    private ArrayList<MultipleChoiceQuestion> mcQuestions = new ArrayList<MultipleChoiceQuestion>();
+    private ArrayList<CheckBoxQuestion> cbQuestions = new ArrayList<CheckBoxQuestion>();
+    private ArrayList<TrueFalseQuestion> tfQuestions = new ArrayList<TrueFalseQuestion>();
+    Scanner input = new Scanner(System.in);
+    private HashMap<String, String> responses = new HashMap<>();
 
 
     public Quiz() {
-        HashMap<String, String[]> multipleChoiceQuestions = new HashMap<>();
         String question1 = "What year did the Cold War officially start?";
         String[] question1Options = new String[] {"1941", "1945", "1947", "1950"};
         String question1Answer = "1945";
@@ -47,7 +49,31 @@ public class Quiz {
     }
 
     public void startQuiz(){
-        System.out.println();
+        System.out.println("Welcome to History Quiz!\n");
+
+        for(MultipleChoiceQuestion q : mcQuestions) {
+            q.displayOptions();
+            System.out.print("Your answer: ");
+            responses.put(q.question, input.nextLine());
+            System.out.println();
+        }
+
+        for(CheckBoxQuestion q : cbQuestions) {
+            q.displayOptions();
+            System.out.print("Your answer: ");
+            responses.put(q.question, input.nextLine());
+            System.out.println();
+        }
+
+        for(TrueFalseQuestion q : tfQuestions) {
+            q.displayOptions();
+            System.out.print("Your answer: ");
+            responses.put(q.question, input.nextLine());
+            System.out.println();
+        }
+
+        System.out.print(responses);
+
     }
     public void gradeQuiz() {
 
