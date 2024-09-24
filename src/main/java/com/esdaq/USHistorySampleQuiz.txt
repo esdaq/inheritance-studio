@@ -1,0 +1,35 @@
+US History Sample Quiz
+
+MCQ:
+    1. What year did the Cold War officially start?
+        A) 1941
+        B) 1945
+        C) 1947
+        D) 1950
+
+        Answer: C) 1947
+
+   2. Which of the following is most associated with the start of the Cold War?
+        A) The Cuban Missile Crisis
+        B) The Berlin Blockade
+        C) The Korean War
+        D) The signing of the Warsaw Pact
+
+        Answer: B) The Berlin Blockade
+
+TFQ:
+   3. The Berlin Wall was constructed in 1961 to separate East and West Berlin.
+
+        Answer: True
+
+   4. The policy of "Containment" was aimed at preventing the spread of communism.
+
+        Answer: True
+CBQ:
+   5. Which of the following events were part of the Cold War? (Select all that apply)
+        * The Cuban Missile Crisis - Correct
+        * The Vietnam War - Correct
+        * The Treaty of Versailles
+        * The Berlin Blockade - Correct
+        * World War II
+        * The Space Race - Correct

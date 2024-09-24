@@ -3,7 +3,10 @@ package com.esdaq;
 public class TrueFalseQuestion extends Question{
     private Boolean answer;
 
-    p
+    public TrueFalseQuestion(String question, Boolean answer){
+        this.question = question;
+        this.answer = answer;
+    }
 
     @Override
     public void displayOptions() {
